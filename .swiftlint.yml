@@ -1,0 +1,9 @@
+disabled_rules: # rule identifiers to exclude from running
+  - nesting
+  - type_name
+  - force_cast
+  - line_length
+  - identifier_name
+  - function_body_length
+  - file_length
+  - type_body_length
