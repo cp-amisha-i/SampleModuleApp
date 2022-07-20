@@ -5,19 +5,15 @@
 //  Created by Amisha I on 20/07/22.
 //
 
+import UI
 import Data
 import SwiftUI
 import UIPilot
 
-enum AppRoute: Equatable {
-    case Login
-    case HomeScreen
-}
-
 @main
 struct SampleApp: App {
 
-    private let pilot: UIPilot<AppRoute>
+    public let pilot: UIPilot<AppRoute>
 
     init() {
         pilot = .init(initial: .Login)

@@ -10,23 +10,23 @@ import UIPilot
 import Combine
 import Foundation
 
-enum ViewState {
+public enum ViewState {
     case START
     case LOADING
     case SUCCESS(users: [User])
     case FAILURE(error: String)
 }
 
-class HomeRouteViewModel: ObservableObject {
+public class HomeRouteViewModel: ObservableObject {
 
-    @Published var currentState: ViewState = .START
-    private var cancelables = Set<AnyCancellable>()
+    @Published public var currentState: ViewState = .START
+    public var cancelables = Set<AnyCancellable>()
 
-    init() {
+    public init() {
         getUsers()
     }
 
-    func getUsers() {
+    public func getUsers() {
         self.currentState = .LOADING
         UserRepository.shared.fetchUsers()
             .sink { completion in

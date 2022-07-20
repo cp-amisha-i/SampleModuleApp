@@ -10,16 +10,16 @@ import Combine
 import UIPilot
 import Foundation
 
-class LoginViewModel: ObservableObject {
+public class LoginViewModel: ObservableObject {
 
     @Published var isLogin = false
     private let appPilot: UIPilot<AppRoute>
 
-    init(pilot: UIPilot<AppRoute>) {
+    public init(pilot: UIPilot<AppRoute>) {
         self.appPilot = pilot
     }
 
-    func onLoginClick() {
+    public func onLoginClick() {
         self.isLogin = true
         AppPreferences.shared.isUserLogin = isLogin
         appPilot.push(.HomeScreen)

@@ -7,11 +7,20 @@
 
 import SwiftUI
 
-struct LoginView: View {
+public enum AppRoute: Equatable {
+    case Login
+    case HomeScreen
+}
+
+public struct LoginView: View {
 
     @ObservedObject var viewModel: LoginViewModel
 
-    var body: some View {
+    public init(viewModel: LoginViewModel) {
+        self.viewModel = viewModel
+    }
+
+    public var body: some View {
         VStack {
             Button("Login Here...") {
                 viewModel.onLoginClick()

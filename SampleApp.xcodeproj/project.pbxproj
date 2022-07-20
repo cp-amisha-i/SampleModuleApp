@@ -9,14 +9,11 @@
 /* Begin PBXBuildFile section */
 		5FC635072887C68E0079AD33 /* SampleApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FC635062887C68E0079AD33 /* SampleApp.swift */; };
 		5FC6350B2887C6900079AD33 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5FC6350A2887C6900079AD33 /* Assets.xcassets */; };
-		5FC6351E2887CC4D0079AD33 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FC635142887CC4D0079AD33 /* LoginView.swift */; };
-		5FC635202887CC4D0079AD33 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FC635162887CC4D0079AD33 /* LoginViewModel.swift */; };
-		5FC635242887CC4D0079AD33 /* UserCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FC6351C2887CC4D0079AD33 /* UserCell.swift */; };
-		5FC635252887CC4D0079AD33 /* HomeRouteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FC6351D2887CC4D0079AD33 /* HomeRouteView.swift */; };
 		5FC635282887CCF40079AD33 /* UIPilot in Frameworks */ = {isa = PBXBuildFile; productRef = 5FC635272887CCF40079AD33 /* UIPilot */; };
-		5FC6352A2887CF790079AD33 /* HomeRouteViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FC635292887CF790079AD33 /* HomeRouteViewModel.swift */; };
-		5FC635C72887FEA30079AD33 /* Data.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5FC635C62887FEA30079AD33 /* Data.framework */; };
-		5FC635C82887FEA30079AD33 /* Data.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 5FC635C62887FEA30079AD33 /* Data.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		5FC6361728881E920079AD33 /* UI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5FC6361628881E920079AD33 /* UI.framework */; };
+		5FC6361828881E920079AD33 /* UI.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 5FC6361628881E920079AD33 /* UI.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		5FC6361F28881F950079AD33 /* Data.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5FC6361E28881F950079AD33 /* Data.framework */; };
+		5FC6362028881F950079AD33 /* Data.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 5FC6361E28881F950079AD33 /* Data.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		85100AB3D0D890952743E97C /* Pods_SampleApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 90A17F33F0FDCFC23344EC88 /* Pods_SampleApp.framework */; };
 /* End PBXBuildFile section */
 
@@ -27,7 +24,8 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				5FC635C82887FEA30079AD33 /* Data.framework in Embed Frameworks */,
+				5FC6362028881F950079AD33 /* Data.framework in Embed Frameworks */,
+				5FC6361828881E920079AD33 /* UI.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -39,13 +37,10 @@
 		5FC635032887C68E0079AD33 /* SampleApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SampleApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5FC635062887C68E0079AD33 /* SampleApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleApp.swift; sourceTree = "<group>"; };
 		5FC6350A2887C6900079AD33 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		5FC635142887CC4D0079AD33 /* LoginView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
-		5FC635162887CC4D0079AD33 /* LoginViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
-		5FC6351C2887CC4D0079AD33 /* UserCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserCell.swift; sourceTree = "<group>"; };
-		5FC6351D2887CC4D0079AD33 /* HomeRouteView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeRouteView.swift; sourceTree = "<group>"; };
-		5FC635292887CF790079AD33 /* HomeRouteViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeRouteViewModel.swift; sourceTree = "<group>"; };
 		5FC635C52887FB9F0079AD33 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		5FC635C62887FEA30079AD33 /* Data.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Data.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5FC6361628881E920079AD33 /* UI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = UI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5FC6361E28881F950079AD33 /* Data.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Data.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		90A17F33F0FDCFC23344EC88 /* Pods_SampleApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SampleApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B81B043C258A8FDEA5312EAD /* Pods-SampleApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SampleApp.debug.xcconfig"; path = "Target Support Files/Pods-SampleApp/Pods-SampleApp.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -55,8 +50,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5FC635C72887FEA30079AD33 /* Data.framework in Frameworks */,
+				5FC6361F28881F950079AD33 /* Data.framework in Frameworks */,
 				5FC635282887CCF40079AD33 /* UIPilot in Frameworks */,
+				5FC6361728881E920079AD33 /* UI.framework in Frameworks */,
 				85100AB3D0D890952743E97C /* Pods_SampleApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -96,38 +92,9 @@
 			children = (
 				5FC635C52887FB9F0079AD33 /* Info.plist */,
 				5FC635062887C68E0079AD33 /* SampleApp.swift */,
-				5FC635412887DA6F0079AD33 /* UI */,
 				5FC635C42887FA2B0079AD33 /* Resources */,
 			);
 			path = SampleApp;
-			sourceTree = "<group>";
-		};
-		5FC635182887CC4D0079AD33 /* HomeScreen */ = {
-			isa = PBXGroup;
-			children = (
-				5FC6351D2887CC4D0079AD33 /* HomeRouteView.swift */,
-				5FC635292887CF790079AD33 /* HomeRouteViewModel.swift */,
-				5FC6351C2887CC4D0079AD33 /* UserCell.swift */,
-			);
-			path = HomeScreen;
-			sourceTree = "<group>";
-		};
-		5FC6352D2887D0FB0079AD33 /* Login */ = {
-			isa = PBXGroup;
-			children = (
-				5FC635142887CC4D0079AD33 /* LoginView.swift */,
-				5FC635162887CC4D0079AD33 /* LoginViewModel.swift */,
-			);
-			path = Login;
-			sourceTree = "<group>";
-		};
-		5FC635412887DA6F0079AD33 /* UI */ = {
-			isa = PBXGroup;
-			children = (
-				5FC6352D2887D0FB0079AD33 /* Login */,
-				5FC635182887CC4D0079AD33 /* HomeScreen */,
-			);
-			path = UI;
 			sourceTree = "<group>";
 		};
 		5FC635C42887FA2B0079AD33 /* Resources */ = {
@@ -141,6 +108,8 @@
 		E8239722D8EF5DC4C957F934 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				5FC6361E28881F950079AD33 /* Data.framework */,
+				5FC6361628881E920079AD33 /* UI.framework */,
 				5FC635C62887FEA30079AD33 /* Data.framework */,
 				90A17F33F0FDCFC23344EC88 /* Pods_SampleApp.framework */,
 			);
@@ -199,8 +168,8 @@
 			);
 			mainGroup = 5FC634FA2887C68E0079AD33;
 			packageReferences = (
-				5FC635262887CCF40079AD33 /* XCRemoteSwiftPackageReference "UIPilot.git" */,
-				5FC635322887D1E70079AD33 /* XCRemoteSwiftPackageReference "CocoaLumberjack.git" */,
+				5FC635262887CCF40079AD33 /* XCRemoteSwiftPackageReference "UIPilot" */,
+				5FC635322887D1E70079AD33 /* XCRemoteSwiftPackageReference "CocoaLumberjack" */,
 			);
 			productRefGroup = 5FC635042887C68E0079AD33 /* Products */;
 			projectDirPath = "";
@@ -287,12 +256,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5FC635252887CC4D0079AD33 /* HomeRouteView.swift in Sources */,
-				5FC635242887CC4D0079AD33 /* UserCell.swift in Sources */,
-				5FC635202887CC4D0079AD33 /* LoginViewModel.swift in Sources */,
-				5FC6351E2887CC4D0079AD33 /* LoginView.swift in Sources */,
 				5FC635072887C68E0079AD33 /* SampleApp.swift in Sources */,
-				5FC6352A2887CF790079AD33 /* HomeRouteViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -503,7 +467,7 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		5FC635262887CCF40079AD33 /* XCRemoteSwiftPackageReference "UIPilot.git" */ = {
+		5FC635262887CCF40079AD33 /* XCRemoteSwiftPackageReference "UIPilot" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/canopas/UIPilot.git";
 			requirement = {
@@ -511,7 +475,7 @@
 				minimumVersion = 1.2.1;
 			};
 		};
-		5FC635322887D1E70079AD33 /* XCRemoteSwiftPackageReference "CocoaLumberjack.git" */ = {
+		5FC635322887D1E70079AD33 /* XCRemoteSwiftPackageReference "CocoaLumberjack" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/CocoaLumberjack/CocoaLumberjack.git";
 			requirement = {
@@ -524,7 +488,7 @@
 /* Begin XCSwiftPackageProductDependency section */
 		5FC635272887CCF40079AD33 /* UIPilot */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 5FC635262887CCF40079AD33 /* XCRemoteSwiftPackageReference "UIPilot.git" */;
+			package = 5FC635262887CCF40079AD33 /* XCRemoteSwiftPackageReference "UIPilot" */;
 			productName = UIPilot;
 		};
 /* End XCSwiftPackageProductDependency section */

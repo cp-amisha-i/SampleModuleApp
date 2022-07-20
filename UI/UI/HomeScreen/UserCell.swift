@@ -8,11 +8,11 @@
 import Data
 import SwiftUI
 
-struct UserCell: View {
+public struct UserCell: View {
 
-    let user: User
+    public let user: User
 
-    var body: some View {
+    public var body: some View {
         HStack(spacing: 40) {
             AsyncImage(url: URL(string: user.avatar_url)) { image in
                 image

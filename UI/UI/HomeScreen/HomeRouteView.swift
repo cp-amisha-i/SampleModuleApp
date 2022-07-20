@@ -9,12 +9,14 @@ import Data
 import SwiftUI
 import UIPilot
 
-struct HomeRouteView: View {
+public struct HomeRouteView: View {
 
     @EnvironmentObject var rootPilot: UIPilot<AppRoute>
     @ObservedObject var viewModel = HomeRouteViewModel()
 
-    var body: some View {
+    public init() {}
+
+    public var body: some View {
         GeometryReader { geometry in
             if case .LOADING = viewModel.currentState {
                 loaderView()
@@ -36,7 +38,7 @@ struct HomeRouteView: View {
         }
     }
 
-    func loaderView() -> some View {
+    public func loaderView() -> some View {
         ZStack {
             Color.black.opacity(0.05)
                 .ignoresSafeArea()
@@ -44,11 +46,5 @@ struct HomeRouteView: View {
                 .scaleEffect(1, anchor: .center)
                 .progressViewStyle(CircularProgressViewStyle(tint: .gray))
         }
-    }
-}
-
-struct HomeView_Previews: PreviewProvider {
-    static var previews: some View {
-        HomeRouteView()
     }
 }
