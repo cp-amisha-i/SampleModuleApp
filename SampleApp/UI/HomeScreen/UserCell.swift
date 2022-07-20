@@ -5,6 +5,7 @@
 //  Created by Amisha I on 20/07/22.
 //
 
+import Data
 import SwiftUI
 
 struct UserCell: View {

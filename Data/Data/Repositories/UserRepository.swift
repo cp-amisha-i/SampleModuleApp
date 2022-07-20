@@ -11,10 +11,10 @@ import Foundation
 
 public class UserRepository {
 
-    static let shared = UserRepository()
-    private let client: APIClient<UserApi> = .init(session: .default)
+    public static let shared = UserRepository()
+    let client: APIClient<UserApi> = .init(session: .default)
 
-    func fetchUsers() -> AnyPublisher<[User], ServiceError> {
+    public func fetchUsers() -> AnyPublisher<[User], ServiceError> {
         guard Connectivity.isConnectedToInternet else { return Fail(error: ServiceError.networkError).eraseToAnyPublisher() }
         return client.request(.fetchusers)
             .flatMap { dataResponseToAnyPublisher(response: $0) }

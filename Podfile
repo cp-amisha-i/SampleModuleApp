@@ -1,11 +1,21 @@
 # Uncomment the next line to define a global platform for your project
-# platform :ios, '9.0'
+ platform :ios, '15.5'
+
+workspace 'SampleApp.xcworkspace'
+project 'SampleApp.xcodeproj'
+
+inhibit_all_warnings!
+use_frameworks!
+
+target 'Data' do
+  # Provide path for module project file
+  project 'Data/Data.project'
+
+  pod 'Alamofire'
+  pod 'SwiftLint'
+end
 
 target 'SampleApp' do
-  # Comment the next line if you don't want to use dynamic frameworks
-  use_frameworks!
-
-  # Pods for SampleApp
+  pod 'Alamofire'
   pod 'SwiftLint'
-  pod 'Alamofire', '~> 5.6.1'
 end

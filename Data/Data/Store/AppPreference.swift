@@ -7,12 +7,12 @@
 
 import Foundation
 
-class AppPreferences {
+public class AppPreferences {
 
-    static let shared = AppPreferences()
+    static public let shared = AppPreferences()
     private let userDefaults: UserDefaults
 
-    init() {
+    public init() {
         self.userDefaults = UserDefaults.standard
     }
 

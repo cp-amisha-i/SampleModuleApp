@@ -8,5 +8,5 @@
 import Foundation
 
 public struct Constants {
-    static var user_base_url = "https://api.github.com/users"
+    public static var user_base_url = "https://api.github.com/users"
 }
