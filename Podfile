@@ -7,22 +7,27 @@ project 'SampleApp.xcodeproj'
 inhibit_all_warnings!
 use_frameworks!
 
-target 'SampleApp' do
+def ui_pod
+  pod 'SwiftLint'
+end
+
+def data_pod
   pod 'Alamofire'
   pod 'SwiftLint'
+end
+
+target 'SampleApp' do
+  data_pod
 end
 
 target 'Data' do
   # Provide path for module project file
   project 'Data/Data.project'
-
-  pod 'Alamofire'
-  pod 'SwiftLint'
+  data_pod
 end
 
 target 'UI' do
   # Provide path for module project file
   project 'UI/UI.project'
-
-  pod 'SwiftLint'
+  ui_pod
 end
