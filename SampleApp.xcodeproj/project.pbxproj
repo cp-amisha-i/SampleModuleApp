@@ -13,7 +13,6 @@
 		5FC6361728881E920079AD33 /* UI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5FC6361628881E920079AD33 /* UI.framework */; };
 		5FC6361828881E920079AD33 /* UI.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 5FC6361628881E920079AD33 /* UI.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		5FC6361F28881F950079AD33 /* Data.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5FC6361E28881F950079AD33 /* Data.framework */; };
-		5FC6362028881F950079AD33 /* Data.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 5FC6361E28881F950079AD33 /* Data.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		85100AB3D0D890952743E97C /* Pods_SampleApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 90A17F33F0FDCFC23344EC88 /* Pods_SampleApp.framework */; };
 /* End PBXBuildFile section */
 
@@ -24,7 +23,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				5FC6362028881F950079AD33 /* Data.framework in Embed Frameworks */,
 				5FC6361828881E920079AD33 /* UI.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
